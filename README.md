@@ -33,4 +33,4 @@ done
 
 untuk mengecek bisa lewat *nano /etc/password* atau dengan cara login tiap user
 
-## 3. Konfigurasi DNS Server (BIND)
+## 4. Konfigurasi DNS Server (BIND)
