@@ -3,10 +3,10 @@
 Berikut ini adalah step-step konfigurasi server dengan menggunakan debian linux
 
 ## 1. Installasi dan Partisi
-1 buah partisi untuk /
-1 buah partisi untuk swap (4GB aja)
-3 buah partisi 5GB nanti dibuat tipe RAID 5
-mount point buat sebagai /files (buat secara manual)
+- 1 buah partisi untuk /
+- 1 buah partisi untuk swap (4GB aja)
+- 3 buah partisi 5GB nanti dibuat tipe RAID 5
+- mount point buat sebagai /files (buat secara manual)
 
 ## 2. Konfigurasi IP
 eth0 = 172.70.55.3/29
@@ -30,4 +30,4 @@ done
 **root@debian:~#**chmod +x user.sh
 **root@debian:~#**bash user.sh
 
-untuk mengecek bisa lewat **nano /etc/password** atau dengan cara login tiap user
+untuk mengecek bisa lewat *nano /etc/password* atau dengan cara login tiap user
