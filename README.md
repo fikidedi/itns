@@ -29,3 +29,5 @@ done
 ```
 **root@debian:~#**chmod +x user.sh
 **root@debian:~#**bash user.sh
+
+untuk mengecek bisa lewat **nano /etc/password** atau dengan cara login tiap user
