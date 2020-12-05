@@ -20,12 +20,12 @@ netmask 255.255.255.248
 **root@debian:~#**nano user.sh
 
 ketik dan simpan script berikut
-`
+```
 for((id=1; id<=30; id++))
   mkdir -p /home/user$id
   useradd user$id -d /home/user$id -s /bin/bash
   passwd user$id <<< "lks2020"$'\n'"lks2020"
 done
-`
+```
 **root@debian:~#**chmod +x user.sh
 **root@debian:~#**bash user.sh
