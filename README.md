@@ -32,3 +32,5 @@ done
 **root@debian:~#**bash user.sh
 
 untuk mengecek bisa lewat *nano /etc/password* atau dengan cara login tiap user
+
+## 3. Konfigurasi DNS Server (BIND)
