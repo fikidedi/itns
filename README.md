@@ -1,6 +1,6 @@
 # IT Networking Support
 
-Berikut ini adalah step-step konfigurasi server dengan menggunakan debian linux
+STEP-STEP KONFIGURASI CORESRV
 
 ## 1. Installasi dan Partisi
 - 1 buah partisi untuk /
@@ -28,6 +28,7 @@ for((id=1; id<=30; id++))
 done
 ```
 **root@debian:~#**chmod +x user.sh
+
 **root@debian:~#**bash user.sh
 
 untuk mengecek bisa lewat *nano /etc/password* atau dengan cara login tiap user
