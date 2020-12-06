@@ -17,7 +17,7 @@ netmask 255.255.255.248
 
 **root@coresrv:~#**nano /etc/networking/interface
 
-edit tambahkan script berikut
+edit dan tambahkan script berikut
 ```
 auto eth0
 iface eth0 inet static
@@ -50,5 +50,23 @@ untuk mengecek bisa lewat *nano /etc/password* atau dengan cara login tiap user
 ## 4. Konfigurasi DNS Server (BIND)
 
 **root@coresrv:~#**apt-get install bind9
+
 **root@coresrv:~#**cd /etc/bind
+
 **root@coresrv:/etc/bind#**nano named.conf.default-zones
+
+tambahkan dan simpan script berikut dibagian bawah
+```
+zone "lkskabupatentubaba.net"{
+	type master;
+	file "/etc/bind/db.domain1";
+};
+zone "lkskabupaten2019.id"{
+	type master;
+	file "/etc/bind/db.domain2";
+};
+zone "55.70.172.in-addr.arpa"{
+	type master;
+	file "/etc/bind/db.ip";
+};
+```
