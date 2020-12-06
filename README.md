@@ -8,7 +8,7 @@ STEP-STEP KONFIGURASI CORESRV
 - 3 buah partisi 5GB nanti dibuat tipe RAID 5
 - mount point buat sebagai /files (buat secara manual)
 
->>> Pastikan masuk ke user root sebelum melakukan konfigurasi
+> Pastikan masuk ke user root sebelum melakukan konfigurasi
 
 ## 2. Konfigurasi IP
 eth0 = 172.70.55.3/29 artinya
@@ -70,3 +70,14 @@ zone "55.70.172.in-addr.arpa"{
 	file "/etc/bind/db.ip";
 };
 ```
+kopi file yang dibutuhkan 
+
+**root@coresrv:/etc/bind#**cp db.local db.domain1
+
+**root@coresrv:/etc/bind#**cp db.local db.domain2
+
+**root@coresrv:/etc/bind#**cp db.127 db.ip
+
+edit file domain1
+
+**root@coresrv:/etc/bind#**nano db.domain1
