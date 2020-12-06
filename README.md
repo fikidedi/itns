@@ -15,7 +15,7 @@ eth0 = 172.70.55.3/29 artinya
 ip addressnya 172.70.55.3
 netmask 255.255.255.248
 
-**root@coresrv:~#**nano /etc/networking/interface
+**root@coresrv:~#**nano /etc/network/interfaces
 
 edit dan tambahkan script berikut
 ```
