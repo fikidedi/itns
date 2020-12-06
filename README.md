@@ -70,7 +70,7 @@ zone "55.70.172.in-addr.arpa"{
 	file "/etc/bind/db.ip";
 };
 ```
-kopi file yang dibutuhkan 
+Copy file yang dibutuhkan 
 
 **root@coresrv:/etc/bind#**cp db.local db.domain1
 
@@ -78,6 +78,56 @@ kopi file yang dibutuhkan
 
 **root@coresrv:/etc/bind#**cp db.127 db.ip
 
-edit file domain1
+Kemudian edit file domain1
 
 **root@coresrv:/etc/bind#**nano db.domain1
+edit dan tambahkan script berikut
+
+gunakan ctrl+w -> ctrl+r untuk mereplace kata localhost ganti menjadi lkskabupatentubaba.net
+
+```
+@	IN	NS 	lkskabupatentubaba.net.
+@	IN	A	172.70.55.3
+files	IN	A	172.70.55.3
+internal	IN	A	172.70.55.3
+www	IN	A	172.70.55.1
+```
+**root@coresrv:/etc/bind#**nano db.domain2
+
+edit dan tambahkan script berikut
+
+gunakan ctrl+w -> ctrl+r untuk mereplace kata localhost ganti menjadi lkskabupaten2019.id
+
+```
+@	IN	NS 	lkskabupaten2019.id.
+@	IN	A	172.70.55.4
+monitor	IN	A	172.70.55.4
+vpn	IN	A	172.70.55.4
+```
+
+**root@coresrv:/etc/bind#**nano db.ip
+edit dan tambahkan script berikut
+
+gunakan ctrl+w -> ctrl+r untuk mereplace kata localhost ganti menjadi lkskabupatentubaba.net
+
+```
+@	IN	NS 	lkskabupatentubaba.net.
+3	IN	PTR	lkskabupatentubaba.net.
+4	IN	PTR	lkskabupaten2019.id.
+1	IN	PTR	www.lkskabupatentubaba.net.
+```
+
+restart bind9 dengan perintah berikut, pilih salah satu
+**root@coresrv:/etc/bind#**service bind9 restart
+**root@coresrv:/etc/bind#**/etc/init.d/bind9 restart
+
+ubah file resolv.conf
+**root@coresrv:/etc/bind#**nano /etc/resolv.conf
+
+edit dan ganti dengan
+```
+nameserver 127.0.0.1
+```
+untuk ceking bisa gunakan perintah nslookup
+
+> Catatan : jangan lupa untuk konfigurasi ip di coresrc dengan alamat 172.70.55.3
