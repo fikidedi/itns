@@ -118,10 +118,13 @@ gunakan ctrl+w -> ctrl+r untuk mereplace kata localhost ganti menjadi lkskabupat
 ```
 
 restart bind9 dengan perintah berikut, pilih salah satu
+
 **root@coresrv:/etc/bind#**service bind9 restart
+
 **root@coresrv:/etc/bind#**/etc/init.d/bind9 restart
 
 ubah file resolv.conf
+
 **root@coresrv:/etc/bind#**nano /etc/resolv.conf
 
 edit dan ganti dengan
@@ -129,5 +132,3 @@ edit dan ganti dengan
 nameserver 127.0.0.1
 ```
 untuk ceking bisa gunakan perintah nslookup
-
-> Catatan : jangan lupa untuk konfigurasi ip di coresrc dengan alamat 172.70.55.3
