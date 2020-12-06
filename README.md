@@ -8,14 +8,28 @@ STEP-STEP KONFIGURASI CORESRV
 - 3 buah partisi 5GB nanti dibuat tipe RAID 5
 - mount point buat sebagai /files (buat secara manual)
 
+>>> Pastikan masuk ke user root sebelum melakukan konfigurasi
+
 ## 2. Konfigurasi IP
-eth0 = 172.70.55.3/29
-artinya
+eth0 = 172.70.55.3/29 artinya
 ip addressnya 172.70.55.3
 netmask 255.255.255.248
 
+**root@coresrv:~#**nano /etc/networking/interface
+
+edit tambahkan script berikut
+```
+auto eth0
+iface eth0 inet static
+	address 172.70.55.3
+	netmask 255.255.255.248
+```
+restart dengan perintah (pilih salah satu)
+**root@coresrv:~#**/etc/init.d/networking restart
+**root@coresrv:~#**service networking restart
+
+
 ## 3. Cara Buat User Linux
-> Masuk ke user root dulu
 
 **root@debian:~#**nano user.sh
 
@@ -34,3 +48,7 @@ done
 untuk mengecek bisa lewat *nano /etc/password* atau dengan cara login tiap user
 
 ## 4. Konfigurasi DNS Server (BIND)
+
+**root@coresrv:~#**apt-get install bind9
+**root@coresrv:~#**cd /etc/bind
+**root@coresrv:/etc/bind#**nano named.conf.default-zones
