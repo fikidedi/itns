@@ -18,7 +18,7 @@ Daftar Isi
 
 > Pastikan masuk ke user root sebelum melakukan konfigurasi
 
-### 2. 
+### 2. Konfigurasi IP
 eth0 = 172.70.55.3/29 artinya
 ip addressnya 172.70.55.3
 netmask 255.255.255.248
@@ -38,6 +38,7 @@ restart dengan perintah (pilih salah satu)
 
 **root@coresrv:~#**service networking restart
 
+> Gunakan perintah *ifconfig* untuk mengecek alamat ip, bisa juga pake *ifconfig eth0*
 
 ### 3. Cara Buat User Linux
 
