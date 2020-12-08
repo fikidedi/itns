@@ -54,7 +54,7 @@ done
 **root@debian:~#**bash user.sh
 
 untuk mengecek bisa lewat *nano /etc/password* atau dengan cara login tiap user
-
+<div id="bind-1"></div>
 ## 4. Konfigurasi DNS Server (BIND)
 
 **root@coresrv:~#**apt-get install bind9
