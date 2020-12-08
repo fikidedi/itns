@@ -5,7 +5,7 @@ STEP-STEP KONFIGURASI CORESRV
 Daftar Isi
 
 - [Konfigurasi DNS Server](#bind-1 "Baca Konfigurasi DNS Server")
-- [Cara Buat User Linux](#cara-buat-user-linux)
+- [Cara Buat User Linux](#3-cara-buat-user-linux)
 
 
 
