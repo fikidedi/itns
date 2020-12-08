@@ -3,7 +3,7 @@
 STEP-STEP KONFIGURASI CORESRV
 
 Daftar Isi
-### Konfigurasi DNS Server (BIND){#custom-id}
+[Konfigurasi DNS Server (BIND](#bind "Baca Konfigurasi DNS Server")
 
 
 
@@ -54,7 +54,7 @@ done
 
 untuk mengecek bisa lewat *nano /etc/password* atau dengan cara login tiap user
 
-## 4. [Konfigurasi DNS Server (BIND)](#custom-id)
+## 4. [Konfigurasi DNS Server (BIND)](#bind)
 
 **root@coresrv:~#**apt-get install bind9
 
