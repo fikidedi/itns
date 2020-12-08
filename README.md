@@ -4,7 +4,7 @@ STEP-STEP KONFIGURASI CORESRV
 
 Daftar Isi
 
-[Konfigurasi DNS Server (BIND](##bind-1 "Baca Konfigurasi DNS Server")
+[Konfigurasi DNS Server (BIND](#bind-1 "Baca Konfigurasi DNS Server")
 
 
 
