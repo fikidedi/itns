@@ -25,7 +25,9 @@ iface eth0 inet static
 	netmask 255.255.255.248
 ```
 restart dengan perintah (pilih salah satu)
+
 **root@coresrv:~#**/etc/init.d/networking restart
+
 **root@coresrv:~#**service networking restart
 
 
