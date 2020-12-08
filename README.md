@@ -4,12 +4,13 @@ STEP-STEP KONFIGURASI CORESRV
 
 Daftar Isi
 
-- [Konfigurasi DNS Server](#bind-1 "Baca Konfigurasi DNS Server")
+- [Installasi dan Partisi](#1-installasi-dan-partisi)
+- [Konfigurasi IP](#2-konfigurasi-ip)
 - [Cara Buat User Linux](#3-cara-buat-user-linux)
+- [Konfigurasi DNS Server](#bind-1 "Baca Konfigurasi DNS Server")
 
 
-
-## 1. Installasi dan Partisi
+### 1. Installasi dan Partisi
 - 1 buah partisi untuk /
 - 1 buah partisi untuk swap (4GB aja)
 - 3 buah partisi 5GB nanti dibuat tipe RAID 5
@@ -17,7 +18,7 @@ Daftar Isi
 
 > Pastikan masuk ke user root sebelum melakukan konfigurasi
 
-## 2. Konfigurasi IP
+### 2. 
 eth0 = 172.70.55.3/29 artinya
 ip addressnya 172.70.55.3
 netmask 255.255.255.248
@@ -56,7 +57,7 @@ done
 
 untuk mengecek bisa lewat *nano /etc/password* atau dengan cara login tiap user
 <div id="bind-1"></div>
-## 4. Konfigurasi DNS Server (BIND)
+### 4. Konfigurasi DNS Server (BIND)
 
 **root@coresrv:~#**apt-get install bind9
 
