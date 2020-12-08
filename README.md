@@ -2,6 +2,11 @@
 
 STEP-STEP KONFIGURASI CORESRV
 
+Daftar Isi
+- Konfigurasi DNS Server (BIND){#bind}
+
+
+
 ## 1. Installasi dan Partisi
 - 1 buah partisi untuk /
 - 1 buah partisi untuk swap (4GB aja)
@@ -49,7 +54,7 @@ done
 
 untuk mengecek bisa lewat *nano /etc/password* atau dengan cara login tiap user
 
-## 4. Konfigurasi DNS Server (BIND)
+## 4. [Konfigurasi DNS Server (BIND)](#bind)
 
 **root@coresrv:~#**apt-get install bind9
 
