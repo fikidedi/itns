@@ -4,7 +4,8 @@ STEP-STEP KONFIGURASI CORESRV
 
 Daftar Isi
 
-[Konfigurasi DNS Server](#bind-1 "Baca Konfigurasi DNS Server")
+- [Konfigurasi DNS Server](#bind-1 "Baca Konfigurasi DNS Server")
+- [Cara Buat User Linux](#cara-buat-user-linux)
 
 
 
@@ -37,7 +38,7 @@ restart dengan perintah (pilih salah satu)
 **root@coresrv:~#**service networking restart
 
 
-## 3. Cara Buat User Linux
+### 3. Cara Buat User Linux
 
 **root@debian:~#**nano user.sh
 
